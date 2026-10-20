@@ -1,0 +1,15 @@
+.media-row { display: grid; gap: clamp(1.5rem, 1rem + 2vw, 2.5rem); align-items: center; }
+.media-row + .media-row { margin-top: clamp(4rem, 2.5rem + 5vw, 7.5rem); }
+.media-row__text h2, .media-row__text h3 { font-size: var(--step-3); margin-bottom: 1.25rem; }
+.media-row__text p { color: var(--slate); }
+.media-row__link { position: relative; display: block; }
+.media-row__badge {
+  position: absolute; right: 1rem; bottom: 1rem; display: grid; place-items: center;
+  width: 48px; height: 48px; border-radius: 50%; background: #fff; color: var(--ink);
+  box-shadow: 0 6px 18px -6px rgba(0,0,0,0.35); transition: background-color 0.2s;
+}
+.media-row__link:hover .media-row__badge { background: var(--amber); }
+@media (min-width: 900px) {
+  .media-row { grid-template-columns: 1fr 1fr; gap: clamp(3rem, 6vw, 6rem); }
+  .media-row--flip .media-row__media { order: 2; }
+}

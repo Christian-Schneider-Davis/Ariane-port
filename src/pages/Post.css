@@ -1,0 +1,14 @@
+.post { padding-top: calc(var(--header-h) + clamp(2.5rem, 1.5rem + 4vw, 5.5rem)); padding-bottom: var(--section); }
+.post__head, .post__body { max-width: 44rem; margin-inline: auto; }
+.post__back { display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 1.75rem; font-size: var(--step--1); font-weight: 600; color: var(--muted); text-decoration: none; }
+.post__back::before { content: ''; width: 1.5rem; height: 1.5px; background: var(--amber); }
+.post__back:hover { color: var(--ink); }
+.post__title { font-size: var(--step-4); font-weight: 300; }
+.post__meta { display: flex; gap: 1.25rem; margin-top: 1.5rem; padding-bottom: 2rem; border-bottom: 1px solid var(--line); font-size: var(--step--1); color: var(--muted); }
+.post__body { margin-top: 2.5rem; font-family: var(--serif); font-size: 1.25rem; line-height: 1.75; }
+.post__body p { color: #2f343c; }
+.post__body p + p { margin-top: 1.25em; }
+.post__body > p:first-child::first-letter {
+  float: left; font-size: 3.6em; line-height: 0.85; padding: 0.08em 0.1em 0 0; color: var(--ink); font-weight: 300;
+}
+.post__signature { font-style: italic; color: var(--ink) !important; margin-top: 2em !important; }

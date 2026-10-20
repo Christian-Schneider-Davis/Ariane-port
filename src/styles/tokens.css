@@ -1,0 +1,34 @@
+:root {
+  /* Colour — drawn from the original site (slate, mauve) and the sunlight in Ariane's hero photo (amber) */
+  --paper: #ffffff;
+  --mist: #f3f1f4;
+  --mauve: #cac3cb;
+  --slate: #3b424c;
+  --ink: #23272e;
+  --muted: #5c636e;
+  --amber: #e2a234;
+  --amber-deep: #9a6510; /* amber that passes contrast as text on white */
+  --line: #e2dee3;
+  --night: #2b3038;
+
+  /* Type */
+  --serif: 'Newsreader', 'Iowan Old Style', Georgia, serif;
+  --sans: 'Hanken Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  --step--1: 0.875rem;
+  --step-0: 1.0625rem;
+  --step-1: 1.25rem;
+  --step-2: clamp(1.375rem, 1.1rem + 0.9vw, 1.75rem);
+  --step-3: clamp(1.75rem, 1.3rem + 1.6vw, 2.5rem);
+  --step-4: clamp(2.25rem, 1.5rem + 3vw, 4rem);
+  --step-5: clamp(2.6rem, 1.4rem + 5.4vw, 6.75rem);
+
+  /* Space & layout */
+  --gutter: clamp(1rem, 0.4rem + 3vw, 3rem);
+  --max: 1240px;
+  --measure: 66ch;
+  --section: clamp(4rem, 2.5rem + 6vw, 8.5rem);
+  --header-h: 72px;
+  --radius: 3px;
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+}

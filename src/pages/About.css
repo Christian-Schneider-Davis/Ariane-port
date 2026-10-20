@@ -1,0 +1,26 @@
+.about {
+  display: grid; gap: 2.5rem;
+  padding-top: calc(var(--header-h) + clamp(3rem, 2rem + 5vw, 7rem));
+  padding-bottom: clamp(3rem, 2rem + 4vw, 6rem);
+}
+.about__title { font-size: var(--step-4); font-weight: 300; }
+.about__name { margin: 1.25rem 0 1.5rem; letter-spacing: 0.24em; font-size: var(--step--1); font-weight: 600; color: var(--slate); }
+.about__text { max-width: var(--measure); }
+.about__text p { color: var(--slate); }
+.about__text p:first-child { font-size: var(--step-1); color: var(--ink); line-height: 1.55; }
+.about__pull {
+  font-family: var(--serif); font-size: var(--step-3); font-weight: 300; line-height: 1.2;
+  color: var(--ink) !important; margin-block: 1.6em !important; padding-left: 1.25rem;
+  border-left: 2px solid var(--amber); text-wrap: balance;
+}
+.about__pull + p { margin-top: 0; }
+@media (min-width: 1000px) {
+  .about { grid-template-columns: minmax(16rem, 1fr) 2fr; gap: clamp(3rem, 7vw, 7rem); }
+  .about__side { position: sticky; top: calc(var(--header-h) + 2rem); align-self: start; }
+}
+.about__photo .picture { aspect-ratio: 16 / 9 !important; }
+@media (max-width: 699px) { .about__photo .picture { aspect-ratio: 4 / 5 !important; } }
+.about-beyond__grid { display: grid; gap: 2rem; }
+.about-beyond__title { font-size: var(--step-4); font-weight: 300; }
+.about__belief { font-family: var(--serif); font-size: var(--step-2); line-height: 1.35; color: var(--ink) !important; }
+@media (min-width: 1000px) { .about-beyond__grid { grid-template-columns: minmax(16rem, 1fr) 2fr; gap: clamp(3rem, 7vw, 7rem); } }

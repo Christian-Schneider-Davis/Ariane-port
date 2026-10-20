@@ -1,0 +1,20 @@
+.form__grid { display: grid; gap: 1.25rem 1.5rem; }
+.field { display: grid; gap: 0.4rem; }
+.field label { font-size: var(--step--1); font-weight: 600; color: var(--slate); }
+.field input, .field textarea {
+  width: 100%; min-height: 52px; padding: 0.8rem 0.95rem;
+  background: #fff; border: 1.5px solid var(--mauve); border-radius: var(--radius);
+  font-size: 1rem; transition: border-color 0.2s, box-shadow 0.2s;
+}
+.field textarea { resize: vertical; min-height: 9rem; line-height: 1.5; }
+.field input:hover, .field textarea:hover { border-color: var(--muted); }
+.field input:focus, .field textarea:focus { outline: none; border-color: var(--ink); box-shadow: 0 0 0 3px rgba(226, 162, 52, 0.35); }
+.field input:user-invalid, .field textarea:user-invalid { border-color: #b3261e; }
+.form__footer { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; margin-top: 1.75rem; }
+.form__status { font-size: var(--step--1); color: var(--slate); max-width: 40ch; }
+.form__status:empty { display: none; }
+@media (min-width: 640px) {
+  .form__grid { grid-template-columns: 1fr 1fr; }
+  .field--wide { grid-column: 1 / -1; }
+  .form--compact .form__grid { grid-template-columns: 1fr 1fr 1.4fr; }
+}

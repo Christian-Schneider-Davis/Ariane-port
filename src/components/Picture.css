@@ -1,0 +1,2 @@
+.picture { position: relative; overflow: hidden; background: var(--mist); border-radius: var(--radius); }
+.picture img { width: 100%; height: 100%; object-fit: cover; }

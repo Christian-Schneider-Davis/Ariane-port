@@ -1,0 +1,10 @@
+.service-card { display: grid; gap: 1.25rem; text-decoration: none; color: inherit; }
+.service-card .picture img { transition: transform 0.8s var(--ease); }
+.service-card:hover .picture img { transform: scale(1.03); }
+.service-card__title { font-size: var(--step-3); font-weight: 350; }
+.service-card__summary { color: var(--slate); margin-top: 0.6rem; }
+.service-card__cta {
+  display: inline-block; margin-top: 1rem; font-size: var(--step--1); font-weight: 600;
+  border-bottom: 1.5px solid var(--amber); padding-bottom: 2px;
+}
+.service-card:hover .service-card__cta { border-color: var(--ink); }

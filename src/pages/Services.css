@@ -1,0 +1,8 @@
+.services-list { padding-top: 0; }
+.services-list__heading { font-size: var(--step-4); font-weight: 300; padding-top: 2.5rem; border-top: 1px solid var(--line); margin-bottom: clamp(2.5rem, 1.5rem + 3vw, 4.5rem); }
+.services-list .media-row__media { max-width: 520px; }
+.services-list .media-row--flip .media-row__media { justify-self: end; width: 100%; }
+.services-list__cta { margin-top: 1.75rem; }
+.quote { display: grid; gap: 2rem; }
+.quote__heading { font-size: var(--step-4); font-weight: 300; }
+@media (min-width: 1000px) { .quote { grid-template-columns: 1fr 2.2fr; align-items: end; } }

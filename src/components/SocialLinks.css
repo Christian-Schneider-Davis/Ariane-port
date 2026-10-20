@@ -1,0 +1,10 @@
+.social { display: flex; gap: 0.5rem; list-style: none; }
+.social a {
+  display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%;
+  border: 1.5px solid currentColor; text-decoration: none;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+.social--dark a { color: var(--ink); }
+.social--dark a:hover { background: var(--ink); color: #fff; }
+.social--light a { color: #fff; border-color: rgba(255,255,255,0.5); }
+.social--light a:hover { background: #fff; color: var(--night); border-color: #fff; }

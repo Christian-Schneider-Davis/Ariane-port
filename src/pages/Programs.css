@@ -1,0 +1,14 @@
+.programs { padding-top: 0; }
+.programs__heading { font-size: var(--step-4); font-weight: 300; padding-top: 2.5rem; border-top: 1px solid var(--line); margin-bottom: clamp(2rem, 1.5rem + 2vw, 3.5rem); }
+.programs__grid { list-style: none; display: grid; gap: 2.75rem 1.75rem; }
+.program-card { display: grid; gap: 0.9rem; text-decoration: none; color: inherit; }
+.program-card .picture img { transition: transform 0.8s var(--ease); }
+.program-card:hover .picture img { transform: scale(1.03); }
+.program-card__title { font-size: var(--step-2); margin-top: 0.4rem; }
+.program-card__meta { display: flex; gap: 1rem; margin: 0; color: var(--slate); font-size: var(--step--1); }
+.program-card__meta dd { margin: 0; }
+.program-card__price { font-weight: 600; color: var(--ink); }
+.program-card__cta { justify-self: start; font-size: var(--step--1); font-weight: 600; border-bottom: 1.5px solid var(--amber); padding-bottom: 2px; }
+.program-card:hover .program-card__cta { border-color: var(--ink); }
+@media (min-width: 600px) { .programs__grid { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 1100px) { .programs__grid { grid-template-columns: repeat(4, 1fr); } }

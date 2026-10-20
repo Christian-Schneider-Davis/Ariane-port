@@ -1,0 +1,15 @@
+.page-intro {
+  padding-top: calc(var(--header-h) + clamp(3rem, 2rem + 5vw, 7rem));
+  padding-bottom: clamp(2.5rem, 1.5rem + 4vw, 5rem);
+  display: grid; gap: 2rem;
+}
+.page-intro__title { font-size: clamp(2.5rem, 1.2rem + 4.2vw, 5.25rem); font-weight: 300; max-width: 16ch; }
+.page-intro__title:has(span) { max-width: none; }
+.page-intro__title span { display: block; }
+.page-intro__text { margin-top: clamp(1.5rem, 1rem + 2vw, 2.75rem); max-width: 58ch; }
+.page-intro__text p { color: var(--slate); font-size: var(--step-1); line-height: 1.6; }
+.page-intro__lead { font-family: var(--serif); font-size: var(--step-2) !important; color: var(--ink) !important; line-height: 1.3 !important; }
+@media (min-width: 900px) {
+  .page-intro:has(.page-intro__aside) { grid-template-columns: 1fr auto; align-items: end; }
+  .page-intro__text { margin-left: clamp(0rem, 12vw, 11rem); }
+}
