@@ -12,3 +12,4 @@
   float: left; font-size: 3.6em; line-height: 0.85; padding: 0.08em 0.1em 0 0; color: var(--ink); font-weight: 300;
 }
 .post__signature { font-style: italic; color: var(--ink) !important; margin-top: 2em !important; }
+.post__loading { max-width: 44rem; margin-inline: auto; color: var(--muted); }

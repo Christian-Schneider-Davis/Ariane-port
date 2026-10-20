@@ -22,3 +22,6 @@
   .site-footer__contact { align-self: end; }
   .site-footer__base { grid-column: 1 / -1; }
 }
+.site-footer__meta { display: inline-flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; align-items: center; }
+.site-footer__login { color: #b4afb7; text-decoration: none; padding: 0.4rem 0; }
+.site-footer__login:hover { color: #fff; text-decoration: underline; text-decoration-color: var(--amber); text-underline-offset: 0.25em; }

@@ -2,7 +2,7 @@
 // Newest first. Dates are ISO (YYYY-MM-DD).
 
 export const insightsPage = {
-  title: 'Perspectives',
+  title: 'Insights',
 }
 
 export const posts = [

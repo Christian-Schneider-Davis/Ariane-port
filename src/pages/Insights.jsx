@@ -1,4 +1,5 @@
-import { insightsPage, posts } from '../content/posts'
+import { insightsPage } from '../content/posts'
+import { usePosts } from '../lib/usePosts'
 import { useDocumentTitle } from '../lib/useDocumentTitle'
 import { Link } from '../lib/router'
 import { formatDate } from '../lib/formatDate'
@@ -7,6 +8,7 @@ import './Insights.css'
 
 export default function Insights() {
   useDocumentTitle('Insights')
+  const { posts } = usePosts()
   return (
     <>
       <PageIntro title={insightsPage.title} />

@@ -12,6 +12,7 @@ import Insights from './pages/Insights'
 import Post from './pages/Post'
 import NotFound from './pages/NotFound'
 import Programs from './pages/Programs'
+import Admin from './pages/Admin'
 import ProgramDetail from './pages/ProgramDetail'
 import { programByWixId } from './content/programs'
 
@@ -25,6 +26,9 @@ const routes = [
   { path: '/insights', render: () => <Insights /> },
   { path: '/programs', render: () => <Programs /> },
   { path: '/programs/:slug', render: ({ slug }) => <ProgramDetail slug={slug} /> },
+  { path: '/admin', render: () => <Admin /> },
+  { path: '/admin/new', render: () => <Admin mode="new" /> },
+  { path: '/admin/edit/:slug', render: ({ slug }) => <Admin mode="edit" slug={slug} /> },
   { path: '/insights/:slug', render: ({ slug }) => <Post slug={slug} /> },
 ]
 
