@@ -55,7 +55,6 @@ export const work = [
             href: 'https://www.1014.nyc/events/childs-play',
           },
           { text: '“Breaking Boundaries Through Art: Women Creating, Resisting, and Redefining”, organized by Miss Porter\'s School',
-            href: 'https://www.1014.nyc/events/childs-play',
            },
           { text: 'After Hours Podcast - Storytelling for Change, Timberwolf Studio',
             href: 'https://www.youtube.com/watch?v=3vYBI2H5FOc',
