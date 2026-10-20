@@ -1,5 +1,5 @@
 export const home = {
-  headline: ['Turning', 'important causes into movements', 'people care about.'],
+  headline: ['Turning important', 'causes into movements', 'people care about.'],
   intro:
     'I help nonprofits, foundations, UN agencies and mission-driven organizations strengthen advocacy, engage audiences and build meaningful partnerships.',
   cta: "Let's Talk",
