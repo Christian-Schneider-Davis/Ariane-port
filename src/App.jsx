@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { usePath, matchRoute, navigate } from './lib/router'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import BackToTop from './components/BackToTop'
 import Home from './pages/Home'
 import Services from './pages/Services'
 import ServiceDetail from './pages/ServiceDetail'
@@ -66,6 +67,7 @@ export default function App() {
         {redirect ? null : match ? match.route.render(match.params) : <NotFound />}
       </main>
       <Footer />
+      <BackToTop />
     </>
   )
 }

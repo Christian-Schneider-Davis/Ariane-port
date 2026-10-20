@@ -6,7 +6,17 @@ import { useSignedInHint } from '../lib/useAuth'
 import Button from './Button'
 import './Footer.css'
 
-const flatNav = nav.flatMap((i) => (i.children ? i.children : [i]))
+const pages = nav.filter((i) => !i.children)
+const workGroup = nav.find((i) => i.children)
+
+function FooterColumn({ title, children }) {
+  return (
+    <div className="site-footer__col">
+      <h2 className="site-footer__col-title">{title}</h2>
+      {children}
+    </div>
+  )
+}
 
 export default function Footer() {
   const signedIn = useSignedInHint()
@@ -18,17 +28,21 @@ export default function Footer() {
           <Button to="/programs" variant="light">{home.cta}</Button>
         </div>
 
-        <nav aria-label="Footer" className="site-footer__nav">
-          <ul>
-            {flatNav.map((i) => (
-              <li key={i.to}><Link to={i.to}>{i.label}</Link></li>
-            ))}
-          </ul>
+        <nav aria-label="Footer" className="site-footer__cols">
+          <FooterColumn title="Pages">
+            <ul className="site-footer__list">
+              {pages.map((i) => <li key={i.to}><Link to={i.to}>{i.label}</Link></li>)}
+            </ul>
+          </FooterColumn>
+          <FooterColumn title={workGroup.label}>
+            <ul className="site-footer__list">
+              {workGroup.children.map((i) => <li key={i.to}><Link to={i.to}>{i.label}</Link></li>)}
+            </ul>
+          </FooterColumn>
+          <FooterColumn title="Follow">
+            <SocialLinks tone="light" />
+          </FooterColumn>
         </nav>
-
-        <div className="site-footer__contact">
-          <SocialLinks tone="light" />
-        </div>
 
         <div className="site-footer__base">
           <span className="site-footer__wordmark">{site.wordmark}</span>

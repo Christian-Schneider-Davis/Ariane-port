@@ -30,7 +30,8 @@ export default function Services() {
       </section>
 
       <section className="section section--mist" aria-labelledby="quote-heading">
-        <div className="container quote">
+        <div className="container">
+          <div className="quote">
           <h2 id="quote-heading" className="quote__heading">{servicesPage.quote.heading}</h2>
           <Form
             compact
@@ -42,6 +43,7 @@ export default function Services() {
               { name: 'email', label: 'Email', type: 'email', required: true, autoComplete: 'email' },
             ]}
           />
+          </div>
         </div>
       </section>
     </>
