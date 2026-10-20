@@ -23,7 +23,6 @@ export default function Programs() {
                   <h3 className="program-card__title">{p.title}</h3>
                   <dl className="program-card__meta">
                     {p.duration && <div><dt className="visually-hidden">Duration</dt><dd>{p.duration}</dd></div>}
-                    <div><dt className="visually-hidden">{programsPage.priceLabel}</dt><dd className="program-card__price">{p.price}</dd></div>
                   </dl>
                   <span className="program-card__cta">{programsPage.more}</span>
                 </Link>

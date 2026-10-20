@@ -34,6 +34,5 @@
 .home-services__grid { display: grid; gap: clamp(3rem, 2rem + 3vw, 4.5rem) clamp(2rem, 4vw, 4rem); }
 @media (min-width: 700px) {
   .home-services__grid { grid-template-columns: 1fr 1fr; }
-  .home-services__grid > :nth-child(even) { margin-top: clamp(0rem, 8vw, 7rem); }
 }
 @media (max-width: 600px) { .hero__line--3 { padding-left: 2rem; } }

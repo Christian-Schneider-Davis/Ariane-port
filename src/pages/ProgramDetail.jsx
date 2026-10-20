@@ -26,9 +26,8 @@ export default function ProgramDetail({ slug }) {
         <div className="program__buy">
           <dl>
             {p.duration && <div><dt className="visually-hidden">Duration</dt><dd>{p.duration}</dd></div>}
-            <div><dt>{programsPage.priceLabel}</dt><dd className="program__price">{p.price}</dd></div>
           </dl>
-          <Button to={`mailto:${site.email}?subject=${encodeURIComponent(p.title)}`}>{programsPage.join}</Button>
+          <Button to={`mailto:${site.email}?subject=${encodeURIComponent(p.title)}`}>{programsPage.contactCta}</Button>
         </div>
 
         <h2 className="program__about">{programsPage.aboutHeading}</h2>
@@ -46,7 +45,6 @@ export default function ProgramDetail({ slug }) {
           {others.map((o) => (
             <Link key={o.slug} to={`/programs/${o.slug}`}>
               <span>{o.title}</span>
-              <span className="program__others-price">{o.price}</span>
             </Link>
           ))}
         </nav>

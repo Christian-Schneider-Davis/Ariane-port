@@ -14,7 +14,7 @@ export default function SocialLinks({ email = false, tone = 'dark' }) {
       ))}
       {email && (
         <li>
-          <a href={`mailto:${site.email}`} aria-label={`Email ${site.email}`}>
+          <a href={`mailto:${site.email}`} aria-label={`Email ${site.name}`}>
             <Icon name="mail" />
           </a>
         </li>

@@ -27,7 +27,6 @@ export default function Footer() {
         </nav>
 
         <div className="site-footer__contact">
-          <a className="site-footer__email" href={`mailto:${site.email}`}>{site.email}</a>
           <SocialLinks tone="light" />
         </div>
 

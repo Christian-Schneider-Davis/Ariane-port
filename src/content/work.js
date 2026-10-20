@@ -11,7 +11,7 @@ export const work = [
       {
         title: 'Prove It Matters campaign',
         image: 'workProveIt',
-        imageHref: 'https://www.youtube.com/watch?v=3vYBI2H5FOc',
+        imageHref: 'https://proveitmattersnow.com/',
         paragraphs: [
           "Created and developed an innovative advocacy campaign for the United Nations Office of the Special Representative of the Secretary-General for Children and Armed Conflict that combines children's participation, storytelling, art, and strategic advocacy. In just over a year, the campaign engaged more than 10,500 children worldwide, built a coalition of partners across multiple sectors, mobilized new resources, and strengthened political engagement from more than 40 Member States around the protection of children affected by armed conflict.",
           "The initiative will culminate in a major exhibition at the United Nations Headquarters in New York in 2027, bringing children's voices directly into one of the world's most important policy-making spaces.",
@@ -21,6 +21,7 @@ export const work = [
       {
         title: 'Training of Trainers (ToT)',
         image: 'workToT',
+        imageHref: 'https://www.1014.nyc/events/childs-play',
         paragraphs: [
           'Designed and facilitate a Training of Trainers (ToT) on advocacy, helping participants to strengthen their ability to analyse political contexts, develop evidence-based advocacy strategies, influence decision-makers, and engage key stakeholders.',
           'By enabling participants to transfer knowledge within their organisations and networks, the programme contributed to building sustainable local capacity and advancing localisation efforts.',
@@ -54,8 +55,12 @@ export const work = [
             text: "'Child’s Play: An Investigation of Violence, Desires, and Taboos Through Art!', organized by 1014 in New York.",
             href: 'https://www.1014.nyc/events/childs-play',
           },
-          { text: '“Breaking Boundaries Through Art: Women Creating, Resisting, and Redefining”, organized by Miss Porter\'s School' },
-          { text: 'After Hours Podcast - Storytelling for Change, Timberwolf Studio' },
+          { text: '“Breaking Boundaries Through Art: Women Creating, Resisting, and Redefining”, organized by Miss Porter\'s School',
+            href: 'https://www.1014.nyc/events/childs-play',
+           },
+          { text: 'After Hours Podcast - Storytelling for Change, Timberwolf Studio',
+            href: 'https://www.youtube.com/watch?v=3vYBI2H5FOc',
+           },
         ],
       },
     ],

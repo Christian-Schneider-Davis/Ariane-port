@@ -8,8 +8,7 @@ export const programsPage = {
   listHeading: 'Services',
   more: 'View Details',
   aboutHeading: 'About',
-  priceLabel: 'Price',
-  join: 'Join',
+  contactCta: 'Email for more info',
 }
 
 export const programs = [
@@ -18,7 +17,6 @@ export const programs = [
     wixId: 'fd02ae15-2f56-4414-9b3c-5a5636d4e558',
     title: 'Narrative & Storytelling',
     duration: '1 Day',
-    price: '€500.00',
     image: 'programNarrative',
     blocks: [
       {
@@ -63,7 +61,6 @@ export const programs = [
     wixId: '39decf85-4eaa-4724-9f0f-d732cae00479',
     title: 'Free Advocacy Consultation',
     duration: '1 Day',
-    price: 'Free',
     image: 'programConsultation',
     blocks: [
       {
@@ -105,7 +102,6 @@ export const programs = [
     wixId: '41c75d86-632e-428c-9a73-43180dbe43a8',
     title: 'Training & Capacity Building',
     duration: '1 Day',
-    price: '€500.00',
     image: 'programTraining',
     blocks: [
       {
@@ -131,7 +127,6 @@ export const programs = [
     slug: 'creative-advocacy',
     wixId: '873aad94-3136-4722-8052-9bca7f294761',
     title: 'Creative Advocacy',
-    price: '€550.00',
     image: 'programCreative',
     blocks: [
       {

@@ -8,7 +8,6 @@
 .site-footer__nav a { color: #d4d0d6; text-decoration: none; display: inline-block; padding: 0.3rem 0; }
 .site-footer__nav a:hover { color: #fff; text-decoration: underline; text-decoration-color: var(--amber); text-underline-offset: 0.25em; }
 .site-footer__contact { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.25rem; }
-.site-footer__email { color: #fff; font-size: var(--step-1); text-decoration: underline; text-decoration-color: var(--amber); text-underline-offset: 0.25em; text-decoration-thickness: 1.5px; overflow-wrap: anywhere; }
 .site-footer__base {
   display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.75rem;
   border-top: 1px solid rgba(255, 255, 255, 0.14); padding-top: 1.5rem;

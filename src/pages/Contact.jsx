@@ -1,5 +1,4 @@
 import { contact } from '../content/about'
-import { site } from '../content/site'
 import { useDocumentTitle } from '../lib/useDocumentTitle'
 import Form from '../components/Form'
 import SocialLinks from '../components/SocialLinks'
@@ -12,7 +11,6 @@ export default function Contact() {
       <div className="contact__intro">
         <h1 id="contact-title" className="contact__title">{contact.title}</h1>
         <p>{contact.intro}</p>
-        <a className="text-link contact__email" href={`mailto:${site.email}`}>{site.email}</a>
         <SocialLinks />
       </div>
       <div className="contact__form">

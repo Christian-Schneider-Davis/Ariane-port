@@ -4,7 +4,7 @@ import './Picture.css'
 const CDN = 'https://static.wixstatic.com/media/'
 const WIDTHS = [480, 800, 1200, 1600, 2200]
 
-const wixUrl = (id, w) => `${CDN}${id}/v1/fit/w_${w},h_${w * 2},q_85,enc_auto/${id}`
+const wixUrl = (id, w) => `${CDN}${id}/v1/fit/w_${w},h_${w * 2},q_90,usm_0.66_1.00_0.01,enc_auto/${id}`
 const localUrl = (key) => `${import.meta.env.BASE_URL}images/${key}.jpg`
 
 /**
