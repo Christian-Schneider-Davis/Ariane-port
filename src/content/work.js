@@ -22,7 +22,7 @@ export const work = [
         title: 'Training of Trainers (ToT)',
         image: 'workToT',
         paragraphs: [
-          'Designed and facilitate a Training of Trainers (ToT) on advocacy, helping participants to strengthen their ability to analyse political contexts, develop evidence-based advocacy strategies, influence decision-makers, and engage key stakeholders.',
+          'Designed and facilitated a Training of Trainers (ToT) on advocacy, helping participants to strengthen their ability to analyse political contexts, develop evidence-based advocacy strategies, influence decision-makers, and engage key stakeholders.',
           'By enabling participants to transfer knowledge within their organisations and networks, the programme contributed to building sustainable local capacity and advancing localisation efforts.',
         ],
       },

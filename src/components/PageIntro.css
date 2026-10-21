@@ -11,5 +11,4 @@
 .page-intro__lead { font-family: var(--serif); font-size: var(--step-2) !important; color: var(--ink) !important; line-height: 1.3 !important; }
 @media (min-width: 900px) {
   .page-intro:has(.page-intro__aside) { grid-template-columns: 1fr auto; align-items: end; }
-  .page-intro__text { margin-left: clamp(0rem, 12vw, 11rem); }
 }

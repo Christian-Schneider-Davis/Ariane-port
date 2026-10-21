@@ -153,12 +153,6 @@ export const services = [
       'Creating awareness is no longer enough.',
       'People need experiences, stories, and moments that help them connect emotionally with an issue. I help organizations explore creative ways of engaging audiences through storytelling, exhibitions, visual narratives, artistic collaborations, and participatory experiences.',
     ],
-    intro: [
-      {
-        label: 'Who it’s for:',
-        text: ['Organisations looking to innovate their advocacy, expand audiences, or rethink engagement.'],
-      },
-    ],
     sections: [
       {
         heading: 'Areas of collaboration:',
