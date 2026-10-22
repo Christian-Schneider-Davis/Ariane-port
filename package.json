@@ -10,9 +10,11 @@
     "fetch-images": "node scripts/fetch-images.mjs"
   },
   "dependencies": {
+    "@fontsource-variable/hanken-grotesk": "^5.3.0",
+    "@fontsource-variable/newsreader": "^5.3.0",
+    "firebase": "^11.0.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "firebase": "^11.0.0"
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.5.0",

@@ -1,0 +1,13 @@
+.privacy { padding-bottom: var(--section); display: grid; gap: clamp(2rem, 1.5rem + 1.5vw, 3rem); }
+.privacy h2 { font-size: var(--step-2); font-weight: 400; margin-bottom: 0.75rem; color: var(--ink); }
+.privacy p + p { margin-top: 0.9rem; }
+.privacy ul { margin: 0.75rem 0 0; padding-left: 1.2rem; display: grid; gap: 0.45rem; color: var(--slate); }
+.privacy li::marker { color: var(--amber); }
+.privacy strong { color: var(--ink); font-weight: 600; }
+.privacy__settings {
+  margin-top: 0.4rem; min-height: 44px; padding: 0.55rem 1.3rem; border-radius: 999px; cursor: pointer;
+  font: 600 var(--step--1) var(--sans); letter-spacing: 0.02em;
+  background: transparent; color: var(--ink); border: 1.5px solid var(--ink);
+  transition: background-color 0.2s var(--ease), color 0.2s var(--ease);
+}
+.privacy__settings:hover { background: var(--ink); color: #fff; }

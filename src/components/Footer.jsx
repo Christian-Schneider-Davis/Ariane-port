@@ -4,6 +4,7 @@ import { home } from '../content/home'
 import SocialLinks from './SocialLinks'
 import { useSignedInHint } from '../lib/useAuth'
 import Button from './Button'
+import { openConsentSettings } from '../lib/consent'
 import './Footer.css'
 
 const pages = nav.filter((i) => !i.children)
@@ -48,6 +49,8 @@ export default function Footer() {
           <span className="site-footer__wordmark">{site.wordmark}</span>
           <span className="site-footer__meta">
             <span>{site.copyright}</span>
+            <Link to="/privacy" className="site-footer__login">Privacy</Link>
+            <button type="button" className="site-footer__login site-footer__cookies" onClick={openConsentSettings}>Cookie settings</button>
             <Link to="/admin" className="site-footer__login">{signedIn ? 'Dashboard' : 'Log in'}</Link>
           </span>
         </div>

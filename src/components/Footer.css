@@ -34,3 +34,4 @@
   .site-footer__headline { font-size: var(--step-3); }
   .site-footer__base { grid-column: 1 / -1; }
 }
+.site-footer__cookies { background: none; border: 0; font: inherit; cursor: pointer; }

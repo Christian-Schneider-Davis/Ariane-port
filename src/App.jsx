@@ -3,6 +3,7 @@ import { usePath, matchRoute, navigate } from './lib/router'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import BackToTop from './components/BackToTop'
+import CookieBanner from './components/CookieBanner'
 import Home from './pages/Home'
 import Services from './pages/Services'
 import ServiceDetail from './pages/ServiceDetail'
@@ -15,6 +16,7 @@ import NotFound from './pages/NotFound'
 import Programs from './pages/Programs'
 import Admin from './pages/Admin'
 import ProgramDetail from './pages/ProgramDetail'
+import Privacy from './pages/Privacy'
 import { programByWixId } from './content/programs'
 
 const routes = [
@@ -25,6 +27,7 @@ const routes = [
   { path: '/about', render: () => <About /> },
   { path: '/contact', render: () => <Contact /> },
   { path: '/insights', render: () => <Insights /> },
+  { path: '/privacy', render: () => <Privacy /> },
   { path: '/programs', render: () => <Programs /> },
   { path: '/programs/:slug', render: ({ slug }) => <ProgramDetail slug={slug} /> },
   { path: '/admin', render: () => <Admin /> },
@@ -68,6 +71,7 @@ export default function App() {
       </main>
       <Footer />
       <BackToTop />
+      <CookieBanner />
     </>
   )
 }

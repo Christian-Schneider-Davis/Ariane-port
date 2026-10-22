@@ -12,8 +12,8 @@
   --night: #2b3038;
 
   /* Type */
-  --serif: 'Newsreader', 'Iowan Old Style', Georgia, serif;
-  --sans: 'Hanken Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --serif: 'Newsreader Variable', 'Newsreader', 'Iowan Old Style', Georgia, serif;
+  --sans: 'Hanken Grotesk Variable', 'Hanken Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
   --step--1: 0.875rem;
   --step-0: 1.0625rem;
